@@ -1,1 +1,4 @@
-body: {color: darkred}
+body
+    {color: darkred;}
+h1
+    {color:blue;}
