@@ -1,4 +1,20 @@
-body
-    {color: darkred;}
-h1
-    {color:blue;}
+h1 {
+    color:blue;
+}
+
+p, ul, ol {
+    color: darkred;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+}
+
+.red-text {
+    color: red;
+}
+
+.thick-green-border{
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}
