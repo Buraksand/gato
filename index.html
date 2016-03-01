@@ -20,6 +20,8 @@
         Cats can be shy in nature and can even take time while adjusting with the environment.
         One needs to be patient and deal with the animal with a lot of love and care.
     </p>
+
+<div id="cat-photo-form" class="grey-background">
     <p> Cats love:</p>
         <ul>
             <li>milk</li>
@@ -32,8 +34,23 @@
         <li>water</li>
         <li>dogs</li>
     </ol>
+</div>
 
-    <input type="text" placeholder="cat photo url">
+<form action="/submit-cat-photo">
+    <input type="text" placeholder="cat photo url" required>
+    <button type="submit">Submit</button>
+</form>
+
+<p>
+    <label><input type="radio" name="indoor-outdoor" checked>indoor</label>
+    <label><input type="radio" name="indoor-outdoor">outdoor</label>
+</p>
+
+<p>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Kind</label>
+    <label><input type="checkbox" name="personality"> Jealous</label>
+</p>
 
     <script src="main.js"></script>
 </body>
