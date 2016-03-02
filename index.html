@@ -6,53 +6,58 @@
     <!--this is a comment-->
     <link rel="stylesheet" href="main.css"/>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 </head>
+
+
 <body>
-    <img alt="A cute orange cat lying on its back" class = "thick-green-border" src="https://bit.ly/fcc-relaxing-cat">
-    <h1 class="red-text">Cat Photo Application</h1>
-    <p>The 'cat' is a small pet animal. It has four short legs and a beautiful furry tail.
-        Its body is covered with soft and silky hairs. Its claws and teeth are sharp.
-        It has bright and greyish eyes. It can see even in the darkness. </p>
+    <div class="container-fluid">
+        <img alt="A cute orange cat lying on its back" class = "thick-green-border" src="https://bit.ly/fcc-relaxing-cat">
+        <h1 class="red-text">Cat Photo Application</h1>
+        <p>The 'cat' is a small pet animal. It has four short legs and a beautiful furry tail.
+            Its body is covered with soft and silky hairs. Its claws and teeth are sharp.
+            It has bright and greyish eyes. It can see even in the darkness. </p>
+        <p>
+            The cat is found all over the world. It is a beautiful small animal resembling the likes of a
+            <a href="#">tiger</a>.
+            It lives on the streets as well as in our houses.
+            Cats can be shy in nature and can even take time while adjusting with the environment.
+            One needs to be patient and deal with the animal with a lot of love and care.
+        </p>
+
+
+        <p> Cats love:</p>
+            <ul>
+                <li>milk</li>
+                <li>cheese</li>
+                <li>sleeping</li>
+            </ul>
+        <p> Cats hate:</p>
+        <ol>
+            <li>cold</li>
+            <li>water</li>
+            <li>dogs</li>
+            <li>other cats</li>
+        </ol>
+
+
+    <form action="/submit-cat-photo">
+        <input type="text" placeholder="cat photo url" required>
+        <button type="submit">Submit</button>
+    </form>
+
     <p>
-        The cat is found all over the world. It is a beautiful small animal resembling the likes of a
-        <a href="#">tiger</a>.
-        It lives on the streets as well as in our houses.
-        Cats can be shy in nature and can even take time while adjusting with the environment.
-        One needs to be patient and deal with the animal with a lot of love and care.
+        <label><input type="radio" name="indoor-outdoor" checked>indoor</label>
+        <label><input type="radio" name="indoor-outdoor">outdoor</label>
     </p>
 
-<div id="cat-photo-form" class="grey-background">
-    <p> Cats love:</p>
-        <ul>
-            <li>milk</li>
-            <li>cheese</li>
-            <li>sleeping</li>
-        </ul>
-    <p> Cats hate:</p>
-    <ol>
-        <li>cold</li>
-        <li>water</li>
-        <li>dogs</li>
-        <li>other cats</li>
-    </ol>
-</div>
+    <p>
+        <label><input type="checkbox" name="personality" checked> Loving</label>
+        <label><input type="checkbox" name="personality"> Kind</label>
+        <label><input type="checkbox" name="personality"> Jealous</label>
+    </p>
 
-<form action="/submit-cat-photo">
-    <input type="text" placeholder="cat photo url" required>
-    <button type="submit">Submit</button>
-</form>
-
-<p>
-    <label><input type="radio" name="indoor-outdoor" checked>indoor</label>
-    <label><input type="radio" name="indoor-outdoor">outdoor</label>
-</p>
-
-<p>
-    <label><input type="checkbox" name="personality" checked> Loving</label>
-    <label><input type="checkbox" name="personality"> Kind</label>
-    <label><input type="checkbox" name="personality"> Jealous</label>
-</p>
-
-    <script src="main.js"></script>
+        <script src="main.js"></script>
+    </div>
 </body>
 </html>
